@@ -1,11 +1,6 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: 日语资源网站
+description: 学习日语的网站推荐
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
-
-## Further reading
-
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+- [東京外国語大学言語モジュール](https://www.coelang.tufs.ac.jp/mt/ja/)

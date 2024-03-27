@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
+console.log(import.meta.env.BASE_URL);
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://lfl976.github.io',
+	base: '/learn-japanese',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '日语学习网站',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
@@ -14,7 +16,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: '动词变形', link: `/guides/动词变形/` },
 					],
 				},
 				{
@@ -25,3 +27,4 @@ export default defineConfig({
 		}),
 	],
 });
+console.log(import.meta.env.BASE_URL);
