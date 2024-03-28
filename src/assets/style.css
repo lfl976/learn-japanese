@@ -1,0 +1,33 @@
+table.example tr:nth-child(2) td:nth-child(1) {
+	border: 2px solid red;
+}
+
+.bor-t {
+	border-top: 2px solid red !important;
+}
+.bor-r {
+	border-right: 2px solid red !important;
+}
+.bor-b {
+	border-bottom: 2px solid red !important;
+}
+.bor-l {
+	border-left: 2px solid red !important;
+}
+
+.b-t {
+	border-top: 2px solid DodgerBlue !important;
+}
+.b-r {
+	border-right: 2px solid DodgerBlue !important;
+}
+.b-b {
+	border-bottom: 2px solid DodgerBlue !important;
+}
+.b-l {
+	border-left: 2px solid DodgerBlue !important;
+}
+
+.warn {
+	background-color: lightyellow;
+}

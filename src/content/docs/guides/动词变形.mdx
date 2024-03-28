@@ -3,73 +3,225 @@ title: 动词变形
 description: 日语动词有哪些变形
 ---
 
+import '../../../assets/style.css';
+
 <table>
 	<thead>
 		<tr>
 			<th>类别</th>
-			<th>ます形</th>
+			<th colspan="2">ます形</th>
 			<th>て形</th>
+			<th>ない形</th>
+			<th>基本形</th>
+			<th>た形</th>
+			<th>命令形</th>
+			<th>ば形</th>
+			<th>可能形</th>
+			<th class="warn" title="受け身">
+				被动形
+			</th>
+			<th>使役形</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td rowspan="10">一类动词</td>
 			<td>書きます</td>
+			<td>かきます</td>
 			<td>書いて</td>
+			<td>書かない</td>
+			<td>書く</td>
+			<td>書いた</td>
+			<td>書け</td>
+			<td>書けば</td>
+			<td>書ける</td>
+			<td>書かれる</td>
+			<td>書かせる</td>
 		</tr>
 		<tr>
 			<td>行きます</td>
+			<td>いきます</td>
 			<td>行って</td>
+			<td>行かない</td>
+			<td>行く</td>
+			<td>行った</td>
+			<td>行け</td>
+			<td>行けば</td>
+			<td>行ける</td>
+			<td>行かれる</td>
+			<td>行かせる</td>
 		</tr>
 		<tr>
 			<td>急ぎます</td>
+			<td>いそぎます</td>
 			<td>急いで</td>
+			<td>急がない</td>
+			<td>急ぐ</td>
+			<td>急いだ</td>
+			<td>急げ</td>
+			<td>急げば</td>
+			<td>急げる</td>
+			<td>急がれる</td>
+			<td>急がせる</td>
 		</tr>
 		<tr>
-			<td>飛びます</td>
-			<td>とんで</td>
+			<td class="bor-l bor-t bor-r">飛びます</td>
+			<td>とびます</td>
+			<td>飛んで</td>
+			<td>飛ばない</td>
+			<td>飛ぶ</td>
+			<td>飛んだ</td>
+			<td>飛べ</td>
+			<td>飛べば</td>
+			<td>飛べる</td>
+			<td>飛ばれる</td>
+			<td>飛ばせる</td>
 		</tr>
 		<tr>
-			<td>読みます</td>
+			<td class="bor-l bor-r">読みます</td>
+			<td>よみます</td>
 			<td>読んで</td>
+			<td>読まない</td>
+			<td>読む</td>
+			<td>読んだ</td>
+			<td>読め</td>
+			<td>読めば</td>
+			<td>読める</td>
+			<td>読まれる</td>
+			<td>読ませる</td>
 		</tr>
 		<tr>
-			<td>死にます</td>
+			<td class="bor-l bor-b bor-r">死にます</td>
+			<td>しにます</td>
 			<td>死んで</td>
+			<td>死なない</td>
+			<td>死ぬ</td>
+			<td>死んだ</td>
+			<td>死ね</td>
+			<td>死ねば</td>
+			<td>死ねる</td>
+			<td>死なれる</td>
+			<td>死なせる</td>
 		</tr>
 		<tr>
-			<td>待ちます</td>
+			<td class="b-l b-t  b-r">待ちます</td>
+			<td>まちます</td>
 			<td>待って</td>
+			<td>待たない</td>
+			<td>待つ</td>
+			<td>待った</td>
+			<td>待て</td>
+			<td>待てば</td>
+			<td>待てる</td>
+			<td>待たれる</td>
+			<td>待たせる</td>
 		</tr>
 		<tr>
-			<td>売ります</td>
+			<td class="b-l b-r">売ります</td>
+			<td>うります</td>
 			<td>売って</td>
+			<td>売らない</td>
+			<td>売る</td>
+			<td>売った</td>
+			<td>売れ</td>
+			<td>売れば</td>
+			<td>売れる</td>
+			<td>売られる</td>
+			<td>売らせる</td>
 		</tr>
 		<tr>
-			<td>買います</td>
+			<td class="b-l b-b b-r">買います</td>
+			<td>かいます</td>
 			<td>かって</td>
+			<td>買わない</td>
+			<td>買う</td>
+			<td>買った</td>
+			<td>買え</td>
+			<td>買えば</td>
+			<td>買える</td>
+			<td>買われる</td>
+			<td>買わせる</td>
 		</tr>
 		<tr>
 			<td>話します</td>
+			<td>はなします</td>
 			<td>ななして</td>
+			<td>話さない</td>
+			<td>話す</td>
+			<td>話した</td>
+			<td>話せ</td>
+			<td>話せば</td>
+			<td>話せる</td>
+			<td>話される</td>
+			<td>話させる</td>
 		</tr>
 		<tr>
 			<td rowspan="2">二类动词</td>
 			<td>食べます</td>
+			<td>たべます</td>
 			<td>食べて</td>
+			<td>食べない</td>
+			<td>食べる</td>
+			<td>食べた</td>
+			<td>食べろ</td>
+			<td>食べれば</td>
+			<td>食べられる</td>
+			<td>食べられる</td>
+			<td>食べさせる</td>
 		</tr>
 		<tr>
 			<td>見ます</td>
+			<td>みます</td>
 			<td>見て</td>
+			<td>見ない</td>
+			<td>見る</td>
+			<td>見た</td>
+			<td>見ろ</td>
+			<td>見れば</td>
+			<td>見られる</td>
+			<td>見られる</td>
+			<td>見させる</td>
 		</tr>
 		<tr>
 			<td rowspan="2">三类动词</td>
 			<td>来ます</td>
+			<td>きます</td>
 			<td>きて</td>
+			<td class="warn" title="こない">
+				来ない
+			</td>
+			<td class="warn" title="くる">
+				来る
+			</td>
+			<td>来た</td>
+			<td class="warn" title="こい">
+				来い
+			</td>
+			<td class="warn" title="くれば">
+				来れば
+			</td>
+			<td class="warn" title="こられる">
+				来られる
+			</td>
+			<td class="warn" title="こられる">
+				来られる
+			</td>
+			<td class="warn" title="こさせる">
+				来させる
+			</td>
 		</tr>
 		<tr>
 			<td>します</td>
+			<td>します</td>
 			<td>して</td>
+			<td>しない</td>
+			<td>する</td>
+			<td>した</td>
+			<td>しろ</td>
+			<td>すれば</td>
+			<td title="される">できる</td>
+			<td>される</td>
+			<td>させる</td>
 		</tr>
 	</tbody>
 </table>

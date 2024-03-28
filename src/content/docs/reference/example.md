@@ -4,3 +4,4 @@ description: 学习日语的网站推荐
 ---
 
 - [東京外国語大学言語モジュール](https://www.coelang.tufs.ac.jp/mt/ja/)
+- [MLC Japanese Language School](https://www.mlcjapanese.co.jp/)
