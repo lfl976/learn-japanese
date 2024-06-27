@@ -5,6 +5,9 @@ console.log(import.meta.env.BASE_URL);
 export default defineConfig({
 	site: 'https://lfl976.github.io',
 	base: '/learn-japanese',
+	server: {
+		host: true,
+	},
 	integrations: [
 		starlight({
 			title: '日语学习网站',
@@ -14,10 +17,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: '动词变形', link: `/guides/动词变形/` },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',
