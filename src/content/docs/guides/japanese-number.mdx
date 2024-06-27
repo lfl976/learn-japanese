@@ -3,6 +3,8 @@ title: 日语数字
 description: 日语数字
 ---
 
+import ConverNumber from "../../../components/ConverNumber.astro";
+
 ## 100 以下数字
 
 | 数字 | 日语读法 | 数字 | 日语读法     | 数字 | 日语读法     |
@@ -32,38 +34,6 @@ description: 日语数字
 | 800  | はっぴゃく   | 8000 | はっせん   |           |              |
 | 900  | きゅうひゃく | 9000 | きゅうせん |           |              |
 
-## 根据以上阿拉伯数字和日语数字的对应关系，实现一个算法把阿拉伯数字转换为日语数字，注意里面不规则数字的判断
-
-```js
-function numberToJapanese(num) {
-	const digits = [
-		'ゼロ',
-		'いち',
-		'に',
-		'さん',
-		'よん',
-		'ご',
-		'ろく',
-		'なな',
-		'はち',
-		'きゅう',
-	];
-	const units = ['', 'じゅう', 'ひゃく', 'せん', 'まん', 'おく'];
-	const result = [];
-	let unitIndex = 0;
-	while (num > 0) {
-		const digit = num % 10;
-		if (digit > 0) {
-			result.unshift(units[unitIndex]);
-			result.unshift(digits[digit]);
-		}
-		num = Math.floor(num / 10);
-		unitIndex++;
-	}
-	return result.join('');
-}
-```
-
 ## 日语 1 万以上 100 万以下数字
 
 | 数字  | 日语读法   |
@@ -77,3 +47,9 @@ function numberToJapanese(num) {
 | 70000 | ななまん   |
 | 80000 | はちまん   |
 | 90000 | きゅうまん |
+
+export const name = "world";
+
+# 数字转假名
+
+<ConverNumber />
