@@ -1,0 +1,17 @@
+---
+const pages = await Astro.glob('../content/**/*.md');
+---
+
+<div>
+  {pages.map((page) => {
+    const { title, description } = page.frontmatter;
+    const url = page.url;
+    return (
+      <div class="card">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <a href={url}>开始学习</a>
+      </div>
+    );
+  })}
+</div>
